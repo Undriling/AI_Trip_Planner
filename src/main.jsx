@@ -12,6 +12,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google'
 import ViewItinary from './view-itinary/viewItinary.jsx'
 import ErrorBoundary from './ErrorBoundary.jsx'
 import MyItinaries from './myItineries/myItinaries.jsx'
+import Footer from './components/custom/footer.jsx'
 
 
 const router = createBrowserRouter([
@@ -42,7 +43,6 @@ createRoot(document.getElementById('root')).render(
               <Toaster />
             <RouterProvider router={router}/>
           </ErrorBoundary>
-
         </GoogleOAuthProvider>
       </Provider>
   </StrictMode>,

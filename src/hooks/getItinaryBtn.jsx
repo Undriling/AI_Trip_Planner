@@ -127,7 +127,7 @@ const MyComponent = () => {
                 </DialogContent>
             </Dialog>
 
-            <Button disabled={loading} className={"h-12 cursor-pointer font-bold"} onClick={ handleClickEffect }>
+            <Button disabled={loading} className={"md:h-12 cursor-pointer font-bold text-[10px] md:text-[15px]"} onClick={ handleClickEffect }>
                 {loading ? (<AiOutlineLoading3Quarters className="h-7 w-7 animate-spin"/>) : "Get your itinerary 🚀"}
             </Button>
         </>

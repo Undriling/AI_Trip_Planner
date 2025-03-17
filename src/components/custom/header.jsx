@@ -54,8 +54,11 @@ const handleLogout = () => {
 
   return (
     <>
-    <div className='flex justify-between items-center px-4 shadow-sm bg-fixed'>
-        <img src="/logo.svg" alt="logo" className='w-30 h-20' />
+    <div className='flex justify-between items-center px-4 shadow-sm bg-fixed w-screen'>
+        <div className='flex items-center gap-2'>
+            <img src="/logo.svg" alt="logo" className='h-10 w-10 md:w-15 md:h-15 size-10' />
+            <h1 className='text-xs md:text-xl font-bold font-serif text-[#8046FD]'>Tripo File</h1>
+        </div>
 
         <div>
           
@@ -75,20 +78,23 @@ const handleLogout = () => {
 
             <div className='flex items-center gap-2'>
                 {user ? 
-                    <div className='flex items-center gap-5'>
+                    <div className='flex items-center md:gap-5 gap-2'>
+                        <a href='/create-trip'>
+                            <Button className={'cursor-pointer font-semibold w-22 md:w-37 md:h-8 h-6 text-[8px] md:text-sm font-serif bg-gray-300 text-[#8046FD]'} size={"sm"}>➕ Create Itinerary</Button>
+                        </a>
                         <a href='/my-itineraries'>
-                            <Button>My Itineries</Button>
+                            <Button className={'cursor-pointer font-bold w-17 md:w-30 md:h-8 h-6 md:text-sm font-serif text-[8px] bg-gray-300 text-[#8046FD]'} size={"sm"}>My Itineraries</Button>
                         </a>
                         <Popover>
                             <PopoverTrigger>
-                                <img src={user.picture} alt="user" className='w-11 h-11 rounded-full shadow-xl border-2 border-gray-300 object-cover cursor-pointer' /> 
+                                <img src={user.picture} alt="user" className='w-8 h-8 md:w-11 md:h-11 rounded-full shadow-xl border-2 border-gray-300 object-cover cursor-pointer' /> 
                             </PopoverTrigger>
 
                             <PopoverContent className='w-57'>
                                 <h1 className='text-sm font-bold font-serif'>{user?.name}</h1>
                                 <p className='text-xs text-gray-500 font-serif py-2'>📧 {user?.email}</p>
                                 <a href='/'>
-                                    <Button onClick={handleLogout} className={"cursor-pointer"}>
+                                    <Button onClick={handleLogout} className={"cursor-pointer font-bold w-13 md:w-25 md:h-8 h-6 text-sm md:text-sm font-serif text-[8px] bg-gray-300 text-[#8046FD]"} size={"sm"}>
                                         Logout
                                     </Button>
                                 </a>
@@ -96,7 +102,7 @@ const handleLogout = () => {
                         </Popover>
                     </div>
                         : 
-                    <Button onClick={handleSignIn} className={"cursor-pointer"}>Sign In</Button>
+                    <Button onClick={handleSignIn} className={"cursor-pointer w-13 md:w-20 md:h-8 h-6 text-xs md:text-sm font-serif"} size={"sm"}>Sign In</Button>
                 }
             </div>
 

@@ -7,6 +7,7 @@ import PerDaysItinary from './component/daysItinary';
 import { GetPlaceDetails } from '../service/MapBaseApi';
 import ItinaryHeadItems from './component/itinaryHeadItems';
 import HeaderImg from './component/headerImg';
+import Footer from '../components/custom/footer';
 
 const ViewItinary = () => {
     const {tripId} = useParams()
@@ -29,22 +30,23 @@ const ViewItinary = () => {
 
 
   return (
-        <div className='px-10 sm:px-10 md:px-20 lg:px-40 xl:px-55 mt-10 font-serif'>
+        <div >
+            <div className='px-10 sm:px-10 md:px-20 lg:px-40 xl:px-55 mt-10 font-serif'>
+                {/* Header Image */}
+                <HeaderImg trip={trip}/>
 
-            {/* Header Image */}
-            <HeaderImg trip={trip}/>
+                {/* Header items box */}
+                <ItinaryHeadItems trip={trip}/>
 
-            {/* Header items box */}
-            <ItinaryHeadItems trip={trip}/>
+                {/* Hotel Recommendation Container*/}
+                <HotelRecomendation trip={trip}/>
 
-            {/* Hotel Recommendation Container*/}
-            <HotelRecomendation trip={trip}/>
+                {/* Places to Visit Container - Day-1 , Day-2 ... */}
+                <PerDaysItinary trip={trip}/>
+            </div>
 
-            {/* Places to Visit Container - Day-1 , Day-2 ... */}
-            <PerDaysItinary trip={trip}/>
-            
             {/* Footer */}
-            {/* </> */}
+            <Footer/>
         </div>
   )
 }

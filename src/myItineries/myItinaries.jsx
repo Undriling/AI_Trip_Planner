@@ -37,9 +37,7 @@ function MyItinaries() {
                 [1,2,3,4].map((item, index) => (
                     <div key={index} className='w-[230px] h-[200px] bg-gray-200 animate-pulse rounded-2xl py-2 duration-700'>
                     </div>
-               
-            )) 
-            
+                )) 
             }
         </div>
 

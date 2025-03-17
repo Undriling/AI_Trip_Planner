@@ -35,7 +35,7 @@ function ItineraryCard({trip, index}) {
     
     
   return (
-    <Link href={`/view-itinerary/`+ trip?.id}>
+    <Link to={`/view-itinerary/`+ trip?.id}>
         <div key={index} >
             {placePhotoUrl && 
                 <img src={placePhotoUrl ? placePhotoUrl : '/containerImg.jpeg'} className='w-[230px] h-[200px] object-cover rounded-2xl py-2 duration-700'
@@ -47,7 +47,7 @@ function ItineraryCard({trip, index}) {
 
             <div className='w-[230px]'>
                 <h2 className='text-sm font-bold'>{trip?.tripDetails?.placesName?.label}</h2>
-                <h2 className='text-xs'>For {trip?.tripDetails?.tripDetails?.travelDays} days and {trip?.tripDetails?.tripDetails?.budget} budget</h2>
+                <h2 className='text-xs'>For {trip?.tripDetails?.tripDetails?.travelDays} days with {trip?.tripDetails?.tripDetails?.budget} budget</h2>
             </div>
         </div>
     </Link>

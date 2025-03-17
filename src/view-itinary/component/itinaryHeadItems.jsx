@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button } from "@/components/ui/button";
-import { GrSend } from "react-icons/gr";
+import ShareBtn from './ShareBtn';
 function ItinaryHeadItems({ trip }) {
 
   return (
@@ -13,7 +12,7 @@ function ItinaryHeadItems({ trip }) {
                 <h2 className='bg-cyan-300 rounded-lg p-2'>Best Itinerary For {trip?.tripDetails?.tripDetails?.travelerList}</h2>
             </div>
         </div>
-        <Button className={"size-7 sm:size-12 md:size-12 lg:size-12 xl:size-12 cursor-pointer"}><GrSend className=''/></Button>
+        <ShareBtn/>
     </div>
   )
 }
