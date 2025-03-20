@@ -31,7 +31,8 @@ const ViewItinary = () => {
 
   return (
         <div >
-            <div className='px-10 sm:px-10 md:px-20 lg:px-40 xl:px-55 mt-10 font-serif'>
+            <div className='px-10 sm:px-10 md:px-20 lg:px-40 xl:px-55 mt-10 font-serif lg:w-screen min-h-screen'>
+
                 {/* Header Image */}
                 <HeaderImg trip={trip}/>
 
@@ -41,12 +42,14 @@ const ViewItinary = () => {
                 {/* Hotel Recommendation Container*/}
                 <HotelRecomendation trip={trip}/>
 
-                {/* Places to Visit Container - Day-1 , Day-2 ... */}
+                {/* Itinary Container - Day-1 , Day-2 ... */}
                 <PerDaysItinary trip={trip}/>
+
             </div>
 
-            {/* Footer */}
-            <Footer/>
+            <div className='w-screen bottom-0 left-0 table-fixed'>
+                <Footer />
+            </div>
         </div>
   )
 }

@@ -36,17 +36,17 @@ function ItineraryCard({trip, index}) {
     
   return (
     <Link to={`/view-itinerary/`+ trip?.id}>
-        <div key={index} >
+        <div key={index} className='px-10 md:px-2 text-center md:text-start py-2'>
             {placePhotoUrl && 
-                <img src={placePhotoUrl ? placePhotoUrl : '/containerImg.jpeg'} className='w-[230px] h-[200px] object-cover rounded-2xl py-2 duration-700'
+                <img src={placePhotoUrl ? placePhotoUrl : '/containerImg.jpeg'} className='w-full md:w-[300px] h-[200px] object-cover rounded-2xl py-2 duration-700'
                     loading='lazy'
                     onLoad={() => setIsLoaded(true)}
                     onError={(e) => {e.target.src = '/touristImg.jpeg'}}
                 />
             }
 
-            <div className='w-[230px]'>
-                <h2 className='text-sm font-bold'>{trip?.tripDetails?.placesName?.label}</h2>
+            <div className='md:w-[300px] sm:w-[250px]'>
+                <h2 className='md:text-sm font-bold'>{trip?.tripDetails?.placesName?.label}</h2>
                 <h2 className='text-xs'>For {trip?.tripDetails?.tripDetails?.travelDays} days with {trip?.tripDetails?.tripDetails?.budget} budget</h2>
             </div>
         </div>

@@ -39,9 +39,9 @@ function DaysCard({places, index}) {
         <h1>{places?.bestTimeToVisit}</h1>
 
         <Link to={Google_Map_Place_Location+places?.placeName} target='_blank'>
-            <div className='lg:flex cursor-pointer'>
+            <div className='grid cursor-pointer'>
                 {placePhotoUrl && (
-                    <img src={ placePhotoUrl ? placePhotoUrl : '/touristImg.jpeg' } alt='Profile Img' className={`w-full md:w-[220px] h-[150px] md:h-[300px] object-cover rounded-2xl py-2 duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    <img src={ placePhotoUrl ? placePhotoUrl : '/touristImg.jpeg' } alt='Profile Img' className={`w-full h-[150px] md:h-[300px] object-cover rounded-2xl py-2 duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                         loading='lazy'
                         onLoad={() => setIsLoaded(true)}
                         onError={(e) => {e.target.src = '/touristImg.jpeg'}}

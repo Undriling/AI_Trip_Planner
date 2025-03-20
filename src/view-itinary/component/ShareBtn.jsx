@@ -6,7 +6,7 @@ function ShareBtn() {
         navigator.share({
           title: document.title,
           url: window.location.href
-        }).then(() => console.log("Shared successfully"))
+        }).then(() => console.log())
           .catch((error) => console.log("Error sharing", error));
       } else {
         alert("Sharing not supported in this browser.");

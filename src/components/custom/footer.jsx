@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaGithub } f
 
 function Footer() {         
   return (
-    <div className='flex flex-col left-0 bottom-0 w-screen'>
+    <div className='flex flex-col left-0 bottom-0 min-w-screen'>
     <footer className="bg-gray-700 text-white py-10 w-screen overflow-hidden mt-15">
       <div className="container mx-auto px-4 max-w-full">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

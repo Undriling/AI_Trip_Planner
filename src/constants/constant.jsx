@@ -5,3 +5,5 @@ export const Google_Map_Text_Search = "https://maps.googleapis.com/maps/api/plac
 export const Google_Map_Photo_URL = "https://places.googleapis.com/v1/{NAME}/media?maxHeightPx=500&maxWidthPx=500&key=" + import.meta.env.VITE_GOOGLE_MAP_API_KEY;
 
 export const Google_Map_Place_Location = "https://www.google.com/maps/search/?api=1&query=";
+
+export const UserInfo_Axios = "https://www.googleapis.com/oauth2/v3/userinfo";

@@ -5,6 +5,7 @@ import { addPlacesName, addTripDetails } from '../store/placeSlice';
 import { Input } from '../components/ui/input';
 import { SelectBudgetList, SelectTravelerList } from '../constants/options';
 import MyComponent from '../hooks/getItinaryBtn';
+import Footer from '../components/custom/footer';
 
 
 function CreateTrip() {
@@ -15,7 +16,8 @@ function CreateTrip() {
     
     
     return (
-        <div className='sm:px-20 md:px-32 mt-10 font-serif px-6 flex flex-col' onClick={(e) => e.preventDefault()}>
+        <>
+        <div className='sm:px-20 md:px-32 mt-10 font-serif px-6 flex flex-col min-w-screen min-h-screen' onClick={(e) => e.preventDefault()}>
             <h2 className='md:text-3xl text-xl '>Tell us your travel preferences 🏕️🌴</h2>
             <p className='text-bold text-gray-600 md:text-xl py-5'>Just provide some basic information, and our trip planner will generate a customized itinerary based on your preferences.</p>
 
@@ -29,7 +31,7 @@ function CreateTrip() {
 
                 <div className='my-10'>
                     <h2 className='text-bold text-xl md:text-3xl py-4'>How many days are you planning your trip?</h2>
-                    <Input type={'number'} onChange={(b) => {dispatch(addTripDetails({key:"travelDays", value: b.target.value}))}} placeholder={'2-10 days'} className={'rounded-md px-3 my-3 text-xs md:text-xl bg-[#f0f0f0] font-bold'}></Input>
+                    <Input type={'number'} onChange={(b) => {dispatch(addTripDetails({key:"travelDays", value: b.target.value}))}} placeholder={'2-10 days'} className={'rounded-md px-3 my-3 text-xs md:text-lg bg-[#f0f0f0] font-bold'}></Input>
                 </div>
 
                 <div className='my-10 items-center justify-center'>
@@ -69,6 +71,12 @@ function CreateTrip() {
 
             </div>
         </div>
+
+        <div className='w-screen bottom-0 left-0'>
+            <Footer />
+        </div>
+
+        </>
     )
 }
 

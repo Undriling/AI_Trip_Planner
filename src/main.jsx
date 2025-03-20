@@ -13,12 +13,17 @@ import ViewItinary from './view-itinary/viewItinary.jsx'
 import ErrorBoundary from './ErrorBoundary.jsx'
 import MyItinaries from './myItineries/myItinaries.jsx'
 import Footer from './components/custom/footer.jsx'
+import About from './components/custom/about.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+  },
+  {
+    path: '/about-us',
+    element: <About />,
   },
   {
     path: '/create-trip',
@@ -39,8 +44,8 @@ createRoot(document.getElementById('root')).render(
       <Provider store={AppStore}>
         <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLEOAuth_CLIENT_ID}>
           <ErrorBoundary>
-              <Header />
-              <Toaster />
+            <Header />
+            <Toaster />
             <RouterProvider router={router}/>
           </ErrorBoundary>
         </GoogleOAuthProvider>
