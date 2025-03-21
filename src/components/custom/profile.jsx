@@ -1,23 +1,21 @@
 // import { useState } from "react";
 import { motion } from "framer-motion"
 import { Evento_GITHUB_Link, IbcNews_GITHUB_Link, MovieAI_GITHUB_Link, My_Linkedin_Link, My_Resume_Link, TripoFile_GITHUB_Link } from "../../constants/constant";
-import { TbCloudDownload } from "react-icons/tb";
 import Footer from "./footer";
-// import { Button } from "@/components/ui/button";
 
 
 const Profile = () => {
     const handleDownload = () => {
-        const resumeUrl = My_Resume_Link; // Replace with your actual URL
+        const resumeUrl = My_Resume_Link; 
         const newTab = window.open(resumeUrl, "_blank");
         setTimeout(() => {
           const link = document.createElement("a");
           link.href = resumeUrl;
-          link.download = "Manash_Baruah_Resume.pdf"; // Suggested filename
+          link.download = "Manash_Baruah_Resume.pdf"; 
           newTab.document.body.appendChild(link);
           link.click();
           newTab.document.body.removeChild(link);
-        }, 1000); // Delay to ensure tab loads first
+        }, 1000); 
       };
 
   return (
@@ -31,7 +29,7 @@ const Profile = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-5xl">
-        {/* Profile Image */}
+        
         <motion.div
           className="relative w-full h-80 md:h-[650px] rounded-lg overflow-hidden"
           whileHover={{ scale: 1.00 }}
@@ -45,7 +43,6 @@ const Profile = () => {
           />
         </motion.div>
 
-        {/* About Section */}
         <div className="flex flex-col justify-center space-y-4">
           <h3 className="text-2xl font-semibold">Hello, I'm <span onClick={() => window.open(My_Linkedin_Link, "_blank")} className="text-[#8046FD] cursor-pointer">Manash Baruah</span></h3>
           <p className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed">
@@ -67,7 +64,6 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* Additional Images */}
       <div className="mt-12">
         <h3 className="text-2xl font-semibold text-cyan-800">Highlights of My Work</h3>
         <hr className="border-2 m-[10px]"/>

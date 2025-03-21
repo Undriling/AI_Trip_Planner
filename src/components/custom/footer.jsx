@@ -7,7 +7,7 @@ function Footer() {
     <footer className="bg-gray-700 text-white py-10 w-screen overflow-hidden mt-15">
       <div className="container mx-auto px-4 max-w-full">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
+          
           <div>
             <h3 className="text-lg md:text-xl font-serif font-bold mb-4">Tripo File</h3>
             <p className="mb-1 text-sm font-serif">Your intelligent companion for planning the perfect trip experience.</p>
@@ -31,7 +31,6 @@ function Footer() {
             </div>
           </div>
           
-          {/* Quick Links */}
           <div className='text-sm font-serif'>
             <h3 className="text-lg md:text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -43,7 +42,6 @@ function Footer() {
             </ul>
           </div>
           
-          {/* Company */}
           <div className='text-sm font-serif'>
             <h3 className="text-lg md:text-xl font-bold mb-4">Company</h3>
             <ul className="space-y-2">
@@ -54,7 +52,6 @@ function Footer() {
             </ul>
           </div>
           
-          {/* Legal */}
           <div className='text-sm font-serif'>
             <h3 className="text-lg md:text-xl font-bold mb-4">Legal</h3>
             <ul className="space-y-2">

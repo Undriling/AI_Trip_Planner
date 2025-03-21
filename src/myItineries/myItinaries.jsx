@@ -37,7 +37,7 @@ function MyItinaries() {
                 <ItineraryCard trip={trip} index={index}/>  ))
                 :
                 [1,2,3,4,5,6].map((item, index) => (
-                    <div key={index} className='w-[300px] h-[200px] grid grid-cols-1 px-5 sm:grid-cols-2 md:grid-cols-4 my-4 bg-gray-200 animate-pulse rounded-2xl py-2 duration-700'>
+                    <div key={index} className='w-full h-[200px] grid grid-cols-1 px-5 sm:grid-cols-2 md:grid-cols-4 my-4 bg-gray-200 animate-pulse rounded-2xl py-2 duration-700'>
                     </div>
                 )) 
             }

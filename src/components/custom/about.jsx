@@ -1,5 +1,3 @@
-// import { Button } from "@/components/ui/button"
-// import { Img1 } from "../../constants/constants";
 import { Button } from "../ui/button";
 import Footer from "./footer";
 
@@ -29,7 +27,7 @@ export default function About() {
   
             <div className="md:w-1/2">
               <h3 className="text-2xl font-semibold text-gray-800">
-                Simplify Event Planning & Maximize Engagement
+                Simplify Trip Planning & Maximize Adventure
               </h3>
               <p className="mt-4 text-gray-600 text-lg text-justify leading-relaxed">
                 Tripo File is your AI-powered travel companion, making itinerary planning effortless. 
