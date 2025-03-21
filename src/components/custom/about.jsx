@@ -31,13 +31,14 @@ export default function About() {
               <h3 className="text-2xl font-semibold text-gray-800">
                 Simplify Event Planning & Maximize Engagement
               </h3>
-              <p className="mt-4 text-gray-600 text-lg">
+              <p className="mt-4 text-gray-600 text-lg text-justify leading-relaxed">
                 Tripo File is your AI-powered travel companion, making itinerary planning effortless. 
                 Whether you're dreaming of a solo adventure, a family getaway, or a business trip, we provide smart, 
-                personalized recommendations tailored to your interests and budget.
+                personalized recommendations tailored to your interests and budget.  
+                &nbsp;&nbsp;<a href="/profile"><span className="text-[#8046FD]">Click to Meet The Creator</span></a>
               </p>
   
-              <div className="mt-6 space-y-4">
+              <div className="mt-6 space-y-4 text-justify leading-relaxed">
                 <div className="flex items-start gap-4">
                   <span className="text-blue-500 text-2xl">✔</span>
                   <p className="text-gray-700 text-lg">AI-driven itinerary planning for a seamless experience</p>

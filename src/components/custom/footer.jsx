@@ -35,11 +35,11 @@ function Footer() {
           <div className='text-sm font-serif'>
             <h3 className="text-lg md:text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/destinations" className="hover:text-blue-400">Destinations</a></li>
-              <li><a href="/itineraries" className="hover:text-blue-400">Itineraries</a></li>
-              <li><a href="/travel-tips" className="hover:text-blue-400">Travel Tips</a></li>
-              <li><a href="/blog" className="hover:text-blue-400">Blog</a></li>
-              <li><a href="/faq" className="hover:text-blue-400">FAQ</a></li>
+              <li><a href="/create-trip" className="hover:text-blue-400">Destinations</a></li>
+              <li><a href="/create-trip" className="hover:text-blue-400">Itineraries</a></li>
+              <li><a href="/create-trip" className="hover:text-blue-400">Travel Tips</a></li>
+              <li><a href="/about-us" className="hover:text-blue-400">Blog</a></li>
+              <li><a href="/profile" className="hover:text-blue-400">FAQ</a></li>
             </ul>
           </div>
           
@@ -47,10 +47,10 @@ function Footer() {
           <div className='text-sm font-serif'>
             <h3 className="text-lg md:text-xl font-bold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="/about" className="hover:text-blue-400">About Us</a></li>
-              <li><a href="/team" className="hover:text-blue-400">Our Team</a></li>
-              <li><a href="/careers" className="hover:text-blue-400">Careers</a></li>
-              <li><a href="/contact" className="hover:text-blue-400">Contact Us</a></li>
+              <li><a href="/about-us" className="hover:text-blue-400">About Us</a></li>
+              <li><a href="/profile" className="hover:text-blue-400">Meet the Creator</a></li>
+              <li><a href="/" className="hover:text-blue-400">Careers</a></li>
+              <li><a href="/contact-us" className="hover:text-blue-400">Contact Us</a></li>
             </ul>
           </div>
           
@@ -58,10 +58,10 @@ function Footer() {
           <div className='text-sm font-serif'>
             <h3 className="text-lg md:text-xl font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><a href="/terms" className="hover:text-blue-400">Terms of Service</a></li>
-              <li><a href="/privacy" className="hover:text-blue-400">Privacy Policy</a></li>
-              <li><a href="/cookies" className="hover:text-blue-400">Cookie Policy</a></li>
-              <li><a href="/disclaimer" className="hover:text-blue-400">Disclaimer</a></li>
+              <li><a href="/" className="hover:text-blue-400">Terms of Service</a></li>
+              <li><a href="/" className="hover:text-blue-400">Privacy Policy</a></li>
+              <li><a href="/" className="hover:text-blue-400">Cookie Policy</a></li>
+              <li><a href="/" className="hover:text-blue-400">Disclaimer</a></li>
             </ul>
           </div>
         </div>

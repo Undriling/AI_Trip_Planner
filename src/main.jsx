@@ -14,6 +14,7 @@ import ErrorBoundary from './ErrorBoundary.jsx'
 import MyItinaries from './myItineries/myItinaries.jsx'
 import Footer from './components/custom/footer.jsx'
 import About from './components/custom/about.jsx'
+import Profile from './components/custom/profile.jsx'
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: '/about-us',
     element: <About />,
+  },
+  {
+    path: '/profile',
+    element: <Profile />,
   },
   {
     path: '/create-trip',

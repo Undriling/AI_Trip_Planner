@@ -7,8 +7,8 @@ function Home() {
   return (
     <>
     <div className='flex flex-col items-center px-6 font-bold font-serif mt-5 min-w-screen'>
-        <h1 className='text-xl md:text-4xl md:mx-50 col-9 text-center'><span className='text-[#209CEE]'>Discover Your Next Adventure with AI:</span><br/>Personalized Itineraries at Your Fingertips</h1>
-        <p className='text-center text-xs md:text-lg text-gray-600 py-6 md:py-10'>Your personal & free trip planner and travel curator, creating custom itineraries tailored to your interests and budget.</p>
+        <h1 className='text-xl md:text-4xl md:mx-50 col-9 text-center'><span className='text-[#209CEE]'>Revolutionize Your Travel Experience with AI:</span><br/>Smart, Personalized Itineraries with the Best Travel Support</h1>
+        <p className='text-center text-xs md:text-lg text-gray-600 py-6 md:py-10'>Your intelligent and hassle-free travel companion, crafting personalized itineraries tailored to your preferences, budget, and schedule all with seamless support for a stress-free journey.</p>
 
         <div>
             <Link to={'/create-trip'}>

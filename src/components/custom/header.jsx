@@ -88,7 +88,7 @@ const handleLogout = () => {
                             <Button className={'cursor-pointer font-semibold w-22 md:w-37 md:h-8 h-6 text-[8px] md:text-sm font-serif bg-gray-300 text-[#8046FD]'} size={"sm"}>➕ Create Itinerary</Button>
                         </a>
                         <a href='/my-itineraries'>
-                            <Button className={'cursor-pointer hidden md:block sm:hidden font-bold w-17 md:w-30 md:h-8 h-6 md:text-sm font-serif text-[8px] bg-gray-300 text-[#8046FD]'} size={"sm"}>My Itineraries</Button>
+                            <Button className={'cursor-pointer hidden md:block sm:hidden font-bold w-17 md:w-32 md:h-8 h-6 md:text-sm font-serif text-[8px] bg-gray-300 text-[#8046FD]'} size={"sm"}>My Itineraries</Button>
                         </a>
                         <Popover>
                             <PopoverTrigger>
@@ -111,6 +111,10 @@ const handleLogout = () => {
 
                                 <a href='/about-us'>
                                     <p className={'cursor-pointer font-bold md:text-lg text-sm font-serif hover:text-blue-700 text-[#8046FD]'} size={"sm"}>About us</p>
+                                </a>
+
+                                <a href='/profile'>
+                                    <p className={'cursor-pointer font-bold md:text-lg text-sm font-serif hover:text-blue-700 text-[#8046FD]'} size={"sm"}>Creator</p>
                                 </a>
 
                                 <a href='/'>

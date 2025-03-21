@@ -48,9 +48,9 @@ function DaysCard({places, index}) {
                     />
                 )}
 
-                <div className='px-4'>
+                <div className='px-4 text-justify leading-relaxed'>
                     <h2 className='text-sm font-bold py-2'>{places?.placeName}</h2>
-                    <p className='text-xs md:text-sm text-gray-600'>About :- {places?.placeDetails}</p>
+                    <p className='text-xs md:text-sm text-gray-600'>About:- {places?.placeDetails}</p>
                     <h2 className='text-xs md:text-sm font-semibold py-1'>💰 {places?.ticketPricing}</h2>
                     <h2 className='text-xs md:text-sm font-bold'>⭐ {places?.rating}</h2>
                 </div>

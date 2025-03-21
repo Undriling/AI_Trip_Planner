@@ -37,7 +37,7 @@ function HeaderImg({ trip }) {
                 (<img src={photoUrl} alt='Itinary photo' className={`md:h-[350px] w-full object-cover rounded-3xl duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                     loading="lazy"
                     onLoad={() => setIsLoaded(true)} 
-                    onError={(e) => {e.target.src = '/headerImg.jpeg'}}
+                    onError={(e) => {e.target.src = '/headerImg.svg'}}
                 />)       
             }
         </div>

@@ -116,7 +116,7 @@ const MyComponent = () => {
             <Dialog open={dialogOpen} onOpenChange={(isOpen) => dispatch(setDialogOpen(isOpen))}>
                 <DialogContent>
                     <DialogHeader>
-                    <DialogTitle>-</DialogTitle> 
+                    <DialogTitle>.</DialogTitle> 
                         <DialogDescription>
                             <img src="./logo.svg" alt="logo"/>
                             <h2 className="text-2xl font-serif font-bold mt-5">Sign in to continue</h2>
