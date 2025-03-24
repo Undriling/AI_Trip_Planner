@@ -13,7 +13,28 @@ function CreateTrip() {
     const [selectedI, setSelectedI] = useState(null);
     const [selectedII, setSelectedII] = useState(null);
 
-    
+    // Logic For Debouncing of GooglePlacesAutocomplete
+    const [value, setValue] = useState();
+
+    const handleSelect = (val) => {
+        setValue(val)
+    };
+
+    const debounceAutoComplete = (fn, d) => {
+        let timer;
+        return () => {
+            const text = this;
+            const args = arguments;
+
+            clearTimeout(timer)
+            timer = setTimeout(() => {
+                handleSelect.apply(text, args)
+            }, d)
+        }
+    }
+
+    const AutoComplete = debounceAutoComplete(handleSelect, 300)
+     
     
     return (
         <>
@@ -26,6 +47,7 @@ function CreateTrip() {
                     <h2 className='text-bold md:text-3xl text-xl py-4 my-4'>What is destination of choice?</h2>
                     <GooglePlacesAutocomplete apiKey={import.meta.env.VITE_GOOGLE_MAP_API_KEY}
                         selectProps={{onChange: (a) => {dispatch(addPlacesName(a))}}}
+                        onChange={AutoComplete}
                     />
                 </div>
 
