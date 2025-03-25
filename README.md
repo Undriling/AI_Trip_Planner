@@ -1,3 +1,16 @@
+# Live Link :- https://tripofileai.netlify.app
+
+# Tech used :-
+  1/ React JS.
+  2/ Tailwind
+  3/ Firebase
+  4/ Google Authentication
+  5/ Google Map Platform 
+  6/ Gen AI
+  7/ Redux 
+  8/ Axios
+  9/ Best UI experience for all screen  
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
