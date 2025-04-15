@@ -56,7 +56,7 @@ const handleLogout = () => {
 
   return (
     <>
-    <div className='flex justify-between items-center px-4 shadow-sm min-w-screen'>
+    <div className='flex justify-between items-center px-4 shadow-sm min-w-screen bg-[rgba(255,255,255,0.8)] backdrop-blur-[2px] sticky top-0 z-[1020]'>
         <div className='flex items-center gap-2'>
             <img src="/logo.svg" alt="logo" className='h-10 w-10 md:w-15 md:h-15 size-10 cursor-pointer' onClick={() => (window.location.href = '/')}/>
             <h1 className='text-xs md:text-xl font-bold font-serif text-[#8046FD]'>Tripo File</h1>
